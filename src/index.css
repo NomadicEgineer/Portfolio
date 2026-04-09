@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-bg-base: #0a0a0c;
+  --color-bg-surface: rgba(15, 15, 20, 0.85);
+  --color-brand-primary: #3af700;
+  --color-brand-secondary: #3af700;
+  --color-text-main: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --border-muted: rgba(255, 255, 255, 0.08);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+p {
+  line-height: 1.75;
+  color: var(--color-text-muted);
+}
+
+li {
+  line-height: 1.75;
+}
+
+/* Completely reset anchor tags — remove ALL browser defaults */
+a {
+  text-decoration: none !important;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+a:hover, a:visited, a:active, a:focus {
+  text-decoration: none !important;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-brand-secondary) 0%, var(--color-brand-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-panel {
+  background: rgba(13, 17, 23, 0.85);
+  border: 1px solid #30363d;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.6rem !important;
+  padding: 0.75rem 1.75rem !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  font-family: 'Outfit', sans-serif !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.btn-primary {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: var(--color-text-main) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.btn-primary:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: var(--color-brand-secondary) !important;
+  color: var(--color-brand-secondary) !important;
+  transform: translateY(-2px) !important;
+}
+
+.btn-outline {
+  background: transparent !important;
+  color: var(--color-text-muted) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.btn-outline:hover {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: var(--color-text-main) !important;
+  transform: translateY(-2px) !important;
+}
+
+.btn-small {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.875rem !important;
+  font-family: 'Outfit', sans-serif !important;
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  color: var(--color-text-muted) !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.btn-small:hover {
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.2) !important;
+  color: var(--color-text-main) !important;
+  transform: translateY(-1px) !important;
+}
