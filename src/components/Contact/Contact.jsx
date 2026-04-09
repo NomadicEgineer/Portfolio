@@ -13,7 +13,7 @@ const socials = [
     label: 'LinkedIn',
     sub: 'linkedin.com/in/darshanhande',
     icon: <FaLinkedin size="1.6rem" color="#0a66c2" />,
-    href: 'https://linkedin.com/in/darshanhande',
+    href: 'https://www.linkedin.com/in/darshan-hande-200b252aa/',
     target: '_blank',
   },
   {
